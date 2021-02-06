@@ -11,13 +11,13 @@ php artisan ui vue --auth
 npm install && npm run dev
 
 ```
-4. Kemudian Run Laravel
-```
-php artisan serve 
-```
-5. ubah file .env kemudian buat database dan ganti kemudian migrate laravel
+4. ubah file .env kemudian buat database dan ganti kemudian migrate laravel
 ```
 php artisan migrate
+```
+5. Kemudian Run Laravel
+```
+php artisan serve 
 ```
 
 ## Menghilangkan Registrasi Pada tampilan Laravel
