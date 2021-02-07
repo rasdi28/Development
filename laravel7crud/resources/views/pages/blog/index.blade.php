@@ -25,7 +25,9 @@
           <h1>Welcome To Ngoding Bareng Blog</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iste quisquam qui voluptas, quod ex necessitatibus odio nobis alias. Voluptatum tenetur dolorem cum quod eveniet unde libero cupiditate odio quis!</p>
           <div class="container">
-            <a href="{{ route('blog.create') }}"class="btn btn-primary my-2">Add Blog</a>
+              @auth 
+              <a href="{{ route('blog.create') }}"class="btn btn-primary my-2">Add Blog</a>
+              @endauth
           </div>
       </div>
       
@@ -54,22 +56,26 @@
                     <div class="card-body">
                         <p class="card-text">{{ Str::limit($blog->description,200,'') }}  <a href="">Read More...</a></p>
                        
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                            <a 
-                              href="{{ route('blog.edit', $blog->id) }}"
-                              class="btn btn-sm btn-outline-success">
-                              EDIT
-                            </a>
-                            <form action="{{ url('blog/'.$blog->id) }}" method="post" onsubmit="return confirm('Hapus Data?')">
-                                @csrf
-                                @method('delete')                                
-                                <button class="btn btn-danger mr-4" type="submit">Delete</button>   
-                            </form>
-                            {{-- <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="" data-id="{{ $blog->id }}">DELETE</button> --}}
-                            </div>
-                            <small class="text-muted">{{ $blog->created_at->diffForHumans() }}</small>
-                        </div>
+                        
+                       <div class="d-flex justify-content-between align-items-center">
+                        @auth    
+                        <div class="btn-group">
+                           <a 
+                             href="{{ route('blog.edit', $blog->id) }}"
+                             class="btn btn-sm btn-outline-success">
+                             EDIT
+                           </a>
+                           <form action="{{ url('blog/'.$blog->id) }}" method="post" onsubmit="return confirm('Hapus Data?')">
+                               @csrf
+                               @method('delete')                                
+                               <button class="btn btn-danger mr-4" type="submit">Delete</button>   
+                           </form>
+                           {{-- <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="" data-id="{{ $blog->id }}">DELETE</button> --}}
+                           </div>
+                           @endauth
+                           <small class="text-muted">{{ $blog->created_at->diffForHumans() }}</small>
+                       </div>
+                       
                     </div>
                 </div>
             </div>

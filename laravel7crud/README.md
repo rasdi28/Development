@@ -35,3 +35,30 @@ kemudian save dan run di terminal
 ```
 php artisan route:list
 ```
+
+## Manajement Route Auth
+
+jika kita ingin membuat halaman untuk bisa akses suatu page dengan cara login terlebih dahulu atau tidak bisa menggunakan perintah pada controller
+
+```
+public function __construct()
+    {
+        $this->middleware('auth')->except([ //tanda except adalah halaman yang bisa diakses tanpa login
+            'index'
+        ]);
+    }
+
+```
+
+untuk memunculkan tombol atau button dengan ketentuan harus login terlebih dahulu jika ingin melihatnya maka bisa menggunakan perintah @auth dan diakhiri dengan @endauth
+
+contoh
+
+```
+<div class="container">
+    @auth 
+        <a href="{{ route('blog.create') }}"class="btn btn-primary my-2">Add Blog</a>
+    @endauth
+</div>
+
+```
