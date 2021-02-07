@@ -17,6 +17,7 @@ Route::group(['prefix' => 'blog'], function () {
     Route::get('/create','BlogController@create')->name('blog.create');
     Route::get('/edit/{id}','BlogController@edit')->name('blog.edit');
     Route::put('/update/{id}','BlogController@update')->name('blog.update');
+    Route::delete('{id}','BlogController@destroy')->name('blog.delete');
 });
 
 

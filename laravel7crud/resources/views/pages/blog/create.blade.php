@@ -18,9 +18,7 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <!-- <textarea id="editor" type="text" class="form-control" name="description" placeholder="Type article here"></textarea> -->
-                            <!-- <textarea id="konten" class="form-control" name="description" rows="10" cols="50"></textarea> -->
-                            <textarea type="text" class="form-control" id="editor" name="description" placeholder="Type article here"></textarea>
+                            <textarea type="text" class="form-control" id="description" name="description" placeholder="Type article here"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="image">Add Image</label>
