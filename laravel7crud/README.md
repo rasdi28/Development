@@ -35,7 +35,7 @@ php artisan storage:link
 
 ## Result
 1. Home
-![Create-Form](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/home.png = 400x250)
+![Create-Form](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/home.png )
 
 
 2. Registrasi
