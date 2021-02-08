@@ -62,3 +62,27 @@ contoh
 </div>
 
 ```
+
+
+# ERROR
+___
+
+1. masalah awal pertama kali setting/ install projek laravel dari repo orang lain
+
+![error](https://github.com/rasdi28/Development/blob/master/Documentation/img/img1.PNG)
+
+seringkali ketika kita memulai menginstall repo orang atau repo baru dilocal kita maka pesan itu akan muncul. untuk mengatasinya maka langkah pertama install composer
+```
+composer install
+```
+kemudian
+
+```
+php artisan migrate
+
+```
+
+kemudian
+```
+php artisan key:generate
+```
