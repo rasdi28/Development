@@ -35,20 +35,20 @@ php artisan storage:link
 
 ## Result
 1. Home
-![Create-Form](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/home.png)
+![Create-Form](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/home.png = 400x250)
 
 
 2. Registrasi
-![Registrasi](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/registrasi.png)
+![Registrasi](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/registrasi.png = 400x250)
 
 3. Login
-![login](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/login.png)
+![login](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/login.png = 400x250)
 
 4. Blog
-![Blog](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/blog.png)
+![Blog](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/blog.png = 400x250)
 
 5. Create Blog
-![Create](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/create.png)
+![Create](https://github.com/rasdi28/Development/blob/master/laravel7crud/public/img/create.png = 400x250)
 
 ## Menghilangkan Registrasi Pada tampilan Laravel
 1. Buka Routes -> web.php
