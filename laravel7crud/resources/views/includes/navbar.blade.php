@@ -15,6 +15,12 @@
                         Blog
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="{{ route('member.index') }}" class="nav-link">
+                        Members
+                    </a>
+                </li>
                 
             </ul>
 

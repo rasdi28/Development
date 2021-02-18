@@ -68,5 +68,13 @@ class BlogController extends Controller
         return redirect()->route('blog.index');
     }
 
+    public function show($request,  $id)
+    {
+        $blog = $request->all();
+        return view('pages.blog.index')->with([
+            'blogs'=>$blog
+        ]);
+    }
+
 
 }

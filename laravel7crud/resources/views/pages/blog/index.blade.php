@@ -54,7 +54,7 @@
                     <img style="height:270px; object-fit:cover; object-position:center" src="{{ asset($blog->image) }}" class="bd-placeholder-img card-img-top" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
                     
                     <div class="card-body">
-                        <p class="card-text">{{ Str::limit($blog->description,200,'') }}  <a href="">Read More...</a></p>
+                        <p class="card-text">{{ Str::limit($blog->description,200,'') }}  <a href="{{route('blog.show',$blog->id)}}">Read More...</a></p>
                        
                         
                        <div class="d-flex justify-content-between align-items-center">

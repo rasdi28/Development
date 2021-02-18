@@ -9,6 +9,7 @@
 
         <main class="py-4">
             @yield('content')
+            @yield('blog')
         </main>
     </div>
 @include('includes.script')
